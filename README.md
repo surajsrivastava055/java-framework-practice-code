@@ -1,7 +1,8 @@
 <h1>☕ Java Framework Practice Code</h1>
 <h4>A collection of Java backend practice modules demonstrating different Spring and Java framework concepts. 
 This repository includes examples covering Spring Core, Spring Boot, REST APIs, Microservices, JPA, Security, and Testing for learning and hands-on practice.
-<or>
+<br><br>
+ <or>
 <li>Spring Core and Spring Boot fundamentals</li>
 <li>REST API development using Spring Boot</li>
 <li>Spring Data JPA implementation</li>
