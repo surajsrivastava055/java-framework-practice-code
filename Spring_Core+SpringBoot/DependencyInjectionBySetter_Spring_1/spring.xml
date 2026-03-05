@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions for Employee class -->
+    <bean id="employee" class="com.gyan.Employee">
+        <property name="eid" value="1000"/>
+        <property name="ename" value="Anuj Kumar Gupta"/>
+    </bean>
+
+    <!-- bean definitions for ProductInformation class -->
+
+    <bean id="product1" class="com.gyan.ProductInformation">
+        <property name="productId" value="123" />
+        <property name="productName" value="iPhone 16 Pro"/>
+        <property name="productPrice" value="120000.0"/>
+        <property name="isExpired" value="false" />
+        <property name="isAvailable" value="N"/>
+    </bean>
+
+    <bean id="product2" class="com.gyan.ProductInformation">
+        <property name="productId" value="1234" />
+        <property name="productName" value="iPhone 15"/>
+        <property name="productPrice" value="90000.0"/>
+        <property name="isExpired" value="false" />
+        <property name="isAvailable" value="Y"/>
+    </bean>
+
+
+
+</beans>

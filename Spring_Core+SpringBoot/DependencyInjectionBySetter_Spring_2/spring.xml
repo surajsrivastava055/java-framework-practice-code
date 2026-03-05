@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="productList" class="com.gyan.list.ProductInformation">
+        <property name="products" >
+            <list>
+                <value>iPhone12</value>
+                <value>iPhone13</value>
+                <value>iPhone14</value>
+                <value>iPhone15</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="productList1" class="com.gyan.set.ProductInformation1">
+        <property name="products1" >
+            <set>
+                <value>iPhone12</value>
+                <value>iPhone13</value>
+                <value>iPhone14</value>
+                <value>iPhone15</value>
+                <value>iPhone15</value>
+            </set>
+        </property>
+    </bean>
+
+    <bean id="productList2" class="com.gyan.map.ProductInformation2">
+        <property name="productAndPrice" >
+            <map>
+                <entry key="iPhone12" value="50000"/>
+                <entry key="iPhone13" value="70000"/>
+                <entry key="iPhone14" value="90000"/>
+                <entry key="iPhone15" value="120000"/>
+            </map>
+        </property>
+    </bean>
+
+</beans>

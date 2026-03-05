@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!--    for primitive datatypes    -->
+    <!-- bean definitions for Patient class -->
+<!--        <bean id="patient1" class="com.gyan.primitivedatatypes.Patient"/>-->
+<!--        <bean id="patient2" class="com.gyan.primitivedatatypes.Patient">-->
+<!--            <constructor-arg value="1123"/>-->
+<!--        </bean>-->
+
+<!--        <bean id="patient3" class="com.gyan.primitivedatatypes.Patient">-->
+<!--            <constructor-arg value="1123"/>-->
+<!--            <constructor-arg value="Gyan"/>-->
+<!--        </bean>-->
+
+<!--        <bean id="patient4" class="com.gyan.primitivedatatypes.Patient">-->
+<!--            <constructor-arg value="1123" name="pId"/>-->
+<!--            <constructor-arg value="gyan" name="pName" />-->
+<!--            <constructor-arg value="123454" name="pNumber"/>-->
+
+<!--        </bean>-->
+
+<!--        <bean id="patient5" class="com.gyan.primitivedatatypes.Patient">-->
+<!--            <property name="pId" value="1123"/>-->
+<!--        </bean>-->
+
+
+
+    <!-- bean definitions for Collections class -->
+
+<!--    <bean id="cartitems" class="com.gyan.collection.CartItems">-->
+<!--        <constructor-arg value="Gyan"/>-->
+<!--        <constructor-arg>-->
+<!--            <list>-->
+<!--                <value>iPhone14</value>-->
+<!--                <value>iPhone15</value>-->
+<!--                <value>iPhone16</value>-->
+<!--                <value>iPhone16 Pro</value>-->
+<!--                <value>iPhone13</value>-->
+<!--            </list>-->
+<!--        </constructor-arg>-->
+
+<!--        <constructor-arg>-->
+<!--            <set>-->
+<!--                <value>8087897</value>-->
+<!--                <value>369668</value>-->
+<!--                <value>6656567</value>-->
+<!--                <value>369668</value>-->
+<!--                <value>8087897</value>-->
+<!--            </set>-->
+<!--        </constructor-arg>-->
+
+<!--        <constructor-arg>-->
+<!--            <map>-->
+<!--                <entry key="iPhone10" value="50000"/>-->
+<!--                <entry key="iPhone11" value="60000"/>-->
+<!--                <entry key="iPhone12" value="70000"/>-->
+<!--                <entry key="iPhone13" value="80000"/>-->
+<!--            </map>-->
+<!--        </constructor-arg>-->
+<!--    </bean>-->
+
+
+    <!-- bean definitions for Class dependency class -->
+
+    <bean id="school" class="com.gyan.classdependency.School">
+        <constructor-arg value="LPU"/>
+        <constructor-arg ref="teacher"/>
+    </bean>
+
+    <bean id="teacher" class="com.gyan.classdependency.Teacher">
+        <constructor-arg index="2" value="Math Expert"/>
+        <constructor-arg index="1" value="Gyan Shrivastava"/>
+        <constructor-arg index="0" value="12"/>
+        <constructor-arg index="3" ref="student"/>
+    </bean>
+
+    <bean id="student" class="com.gyan.classdependency.Student">
+        <constructor-arg value="101"/>
+        <constructor-arg value="Anuj Shrivastava"/>
+        <constructor-arg value="12th"/>
+    </bean>
+
+
+</beans>

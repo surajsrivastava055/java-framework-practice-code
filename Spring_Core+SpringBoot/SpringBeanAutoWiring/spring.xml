@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--Configuration for byName-->
+        <!--
+        <bean id="product" class="com.gyan.byname.Product">
+            <constructor-arg value="111"/>
+            <constructor-arg value="iPhone 11"/>
+            <constructor-arg value="100000"/>
+        </bean>
+
+        <bean id="cart" class="com.gyan.byname.Cart" autowire="byName">
+            <property name="noOfItems" value="10"/>
+        </bean>
+
+        <bean id="info" class="com.gyan.byname.Information">
+            <constructor-arg value="222"/>
+            <constructor-arg value="This iPhone Battery life is very good"/>
+        </bean>
+        -->
+
+    <!--Configuration for byType-->
+        <!--
+        <bean id="product" class="com.gyan.byclass.Product">
+            <constructor-arg value="111"/>
+            <constructor-arg value="iPhone 11"/>
+            <constructor-arg value="100000"/>
+        </bean>
+
+        <bean id="info" class="com.gyan.byclass.Information">
+            <constructor-arg value="222"/>
+            <constructor-arg value="This iPhone Battery life is very good"/>
+        </bean>
+
+        <bean id="cart" class="com.gyan.byclass.Cart" autowire="byType">
+            <property name="noOfItems" value="10"/>
+        </bean>
+        -->
+
+        <bean id="product" class="com.gyan.constructor.Product">
+            <constructor-arg value="111"/>
+            <constructor-arg value="iPhone 11"/>
+            <constructor-arg value="100000"/>
+        </bean>
+
+        <bean id="info" class="com.gyan.constructor.Information">
+            <constructor-arg value="222"/>
+            <constructor-arg value="This iPhone Battery life is very good"/>
+        </bean>
+
+        <bean id="info1" class="com.gyan.constructor.Information">
+            <constructor-arg value="333"/>
+            <constructor-arg value="This iPhone Camera Performer is very good"/>
+        </bean>
+
+        <bean id="info2" class="com.gyan.constructor.Information">
+            <constructor-arg value="444"/>
+            <constructor-arg value="This iPhone Look is very good"/>
+        </bean>
+
+        <bean id="cart" class="com.gyan.constructor.Cart" autowire="constructor" />
+
+
+
+</beans>

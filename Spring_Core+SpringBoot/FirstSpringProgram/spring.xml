@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+    <!--    address1: ObjectName: bean ID-->
+    <!--    Address address1=new Address();-->
+    <bean id="address1" class="Address"/>
+
+    <!--    student1: ObjectName: bean ID-->
+    <!--    Student student1=new Student();
+    it internally creating object same manner by it is done by IOC container. not by us-->
+    <bean id="student1" class="Student"/>
+
+</beans>
